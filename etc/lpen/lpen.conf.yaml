@@ -7,3 +7,4 @@ smtp_auth_user: "user@example.com" #Логин авторизации на се�
 smtp_auth_password: "supersecret" # Пароль для авторизции на сервере
 password_expiration_text: "{USERNAME}, Warning! Your password on {HOSTNAME} has expired!\nYou are required to change your password immediately!"
 account_expiration_text: "{USERNAME}, Warning! Your account on {HOSTNAME} has expired!\nPlease contact your system administrator."
+modules_path: /usr/lib/python2.7/dist-packages/lpen/modules

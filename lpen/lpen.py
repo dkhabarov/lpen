@@ -24,10 +24,10 @@ def main():
 		print('Can\'t load userlist: %s'% errstr)
 		sys.exit(1)
 
-	sys.path.append(os.getcwd()+'/modules') 
-	for f in os.listdir(os.getcwd()+'/modules'):
+	sys.path.append(config['modules_path']) 
+	for f in os.listdir(config['modules_path']):
 		name, ext = os.path.splitext(f)
-		if ext == '.py':
+		if ext == '.py' and not name == '__init__':
 			plugin = __import__(name)
 			plugins[plugin]=plugin.Plugin(config)
 
