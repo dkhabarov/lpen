@@ -1,1 +1,3 @@
 *.pyc
+*.deb
+build/*linux*

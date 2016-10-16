@@ -1,0 +1,27 @@
+.TH lpen 1 "OCTOBER 2015" "" "User Manuals"
+.SH NAME
+.PP
+lpen \-\- Скрипт, позволяющий отсылать уведомления об истечении срока использования пароля или аккаунта.
+.SH DESCRIPTION
+.PP
+Скрипт, позволяющий отсылать уведомления об истечении срока использования пароля или аккаунта.
+.SH FILES
+.PP
+\fI/etc/lpen/lpen.conf.yml\fP
+Оновные настройки
+.PP
+\fI/etc/lpen/linux\fIpass\fPexpire_users.yaml\fP
+Cписок пользоватеей их email/xmpp адреса
+.SH NOTES
+.PP
+Скрипт должен иметь права для чтения файла \fB\fC/etc/shadow\fR
+.PP
+Для работы нужно добавить задачу в 
+.BR crontab (1)
+.SH AUTHOR
+.PP
+Denis Khabarov \[la]admin@saymon21-root.pro\[ra]
+.SH SEE ALSO
+.PP
+.BR lpen.conf (1), 
+.BR chage (1)

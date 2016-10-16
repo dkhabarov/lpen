@@ -1,0 +1,45 @@
+.TH lpen.conf.yml 1 "OCTOBER 2015" "" "User Manuals"
+.SH NAME
+.PP
+/etc/lpen/lpen.conf.yml \-\- Файл настроек для lpen
+.SH DESCRIPTION
+.PP
+Файл  /etc/lpen/lpen.conf.yml  содержит  настройки для скрипта lpen. В каждой строке содержится по одному значению в формате параметр: значение. Используется yaml.
+.PP
+Действующие параметры настройки:
+.PP
+\fB\fCxmpp_login:\fR \- Логин для авторизации на jabber\-сервере
+.PP
+\fB\fCxmpp_password:\fR \- Пароль для авторизации на jabber\-сервере
+.PP
+\fB\fCuser_list_file:\fR  Файл с пользователями и адресами xmpp/mail
+.PP
+\fB\fCsmtp_server_addr:\fR \- Адрес smtp сервера
+.PP
+\fB\fCsmtp_server_port:\fR \- Порт smtp сервера.
+.PP
+\fB\fCsmtp_auth_user:\fR \- Логин авторизации на сервере
+.PP
+\fB\fCsmtp_auth_password:\fR \- Пароль для авторизции на сервере
+.PP
+\fB\fCpassword_expiration_text:\fR \- Текст уведомления, о надобности смены пароля. В тексте можно использовать переменные
+\fB\fC{HOSTNAME}\fR и \fB\fC{HOSTNAME}\fR, которые соответсвенно будут заменены на хостнейм сервера и имя пользователя.
+.PP
+\fB\fCaccount_expiration_text:\fR \- Текст уведомления, об истечении срока использования аккаунта. В тексте можно использовать переменные \fB\fC{HOSTNAME}\fR и \fB\fC{HOSTNAME}\fR, которые соответсвенно будут заменены на хостнейм сервера и имя пользователя.
+.PP
+Файл пользователей: 
+.PP
+.RS
+.nf
+username:
+  jabber: user@xmpp.example.com
+  mail: user@example.com
+.fi
+.RE
+.SH AUTHOR
+.PP
+Denis Khabarov \[la]admin@saymon21-root.pro\[ra]
+.SH SEE ALSO
+.PP
+.BR lpen (1), 
+.BR chage (1)

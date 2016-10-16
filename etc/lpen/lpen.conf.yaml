@@ -1,6 +1,6 @@
 xmpp_login: "notifications@xmpp.example.com" #Логин для авторизации на jabber-сервере
 xmpp_password: "supersecret" #Пароль для авторизации на jabber-сервере
-user_list_file: ./.linux_pass_expire_users.yaml #Файл с пользователями и адресами xmpp/mail
+user_list_file: /etc/lpen/.linux_pass_expire_users.yaml #Файл с пользователями и адресами xmpp/mail
 smtp_server_addr: "smtp.example.com" #Адрес smtp сервера
 smtp_server_port: "25"
 smtp_auth_user: "user@example.com" #Логин авторизации на сервере

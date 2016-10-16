@@ -6,7 +6,7 @@ def main():
 	config = None
 	plugins = {}
 	try:
-		config = yaml.load(open(sys.argv[1]))
+		config = yaml.load(open('/etc/lpen/lpen.conf.yaml'))
 	except IOError as errstr:
 		print('Can\'t load config file: %s' %errstr)
 		sys.exit(1)
